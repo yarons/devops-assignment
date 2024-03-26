@@ -1,11 +1,11 @@
 ## DevOps Engineer Home Assignment
-Below is a home assignment for the position. You are requested to:
+Below is a home assignment for a DevOps Engineer position. You are requested to:
 1. Understand the requirements and use case. You may contact the interviewer for further clarification.
-2. Develop and run your deployment plan for backend environment using the most efficient tools.
+2. Implement and run your deployment plan for backend environment using the most efficient tools.
 3. Present your deployment and result in the next interview session.
 
 ### Requirements
-You are a DevOps engineer in a project of building an online order system. Your task is to deploy a prototype created by the development team and make it available on the public internet.
+You are a DevOps engineer in a project of building an online orders system. Your task is to deploy a prototype created by the development team and make it available on the public internet.
 
 Below is the information given by the development team.
 
@@ -22,13 +22,13 @@ Below is the information given by the development team.
 ### Cloud Infrastructure Requirement
 Your deployment must meet the following criteria:
 - A working deployment which reachable through internet
-- IAC (Infrastructure as Code) deployment for the created AWS resources. You may use Cloudformation, Terraform or AWS CDK for that purpose 
+- IaC (Infrastructure as Code) deployment for the created AWS resources. You may use Cloudformation, Terraform or AWS CDK for that purpose 
 - Documentation for the deployment plan and the resources created
 
 ### Guidebook on completing the assignment
-- Your implementation should be commited to your own public git repository, including any IAC, documentation, etc (fork this repository)
-- Create dockerfiles to match the deployment needs
-- Create all resources using IAC (Infrastructure as Code) tools
+- Your implementation should be commited to your own public git repository, including any IaC, documentation, etc (fork this repository)
+- Create dockerfiles to match the deployment requirements
+- Create all resources using IaC tools
 - Use [Amazon Elastic Container Registry](https://us-east-1.console.aws.amazon.com/ecr/get-started) to push the images to a private repository
 - Create a [Kubernetes](https://us-east-1.console.aws.amazon.com/eks/home) cluster
 - Use helm to deploy the service(s)
@@ -47,12 +47,12 @@ Your deployment must meet the following criteria:
 
 ### How will the assignment be evaluated
 When evaluating the assignment, we will consider the following:
-- The deployment plan and the resources are created and working. we will trigger the API and will expect a valid response
+- The deployment plan and the resources are created and working as expected. We will trigger the API and expect a valid response
 - The documentation is clear and detailed, we will follow the documentation to understand the deployment process
 - Best practicies are followed across all functional and non-functional requirements (for example: security, cost optimization, reliability, etc)
 
 ### General Notes
-- For performing the assignment, you will be given with aws credentials (console and programmatic) to a dedicated account 
-- Make sure to create small tier resources, as the poc demands minimal working loads
+- For performing the assignment, you will be given with AWS credentials (console and programmatic) to a dedicated account, **DO NOT COMMIT THEM IN THE CODE**
+- Make sure to create small tier resources, as the prototype demands minimal working loads
 - This assignment can be implemented in more than one way, if any further permissions are required for your implementation, contact us
 - If you have any other questions, please do not hesitate to ask
