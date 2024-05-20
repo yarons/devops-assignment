@@ -35,15 +35,18 @@ Your deployment must meet the following criteria:
 - Create a MongoDB instance and make it reachable for the deployed service, update the `MONGODB_URL` environment variable to match the mongodb connection url 
 - Expose the services to the internet using AWS Load Balancer, AWS Elastic IP, and Network Interface
 - Document the deployment steps and the resources created in the deployment as clear and detailed as possible
-- Bonus (implement or write detailed plan):
-  - Supply the deployment with CI/CD automated process to push the image to ECR and deploy it to the cluster
-  - Monitor the service and handle recovery for different resources
-  - Maintain and handle the scaling of the service
-  - Maintain and handle high availability of the service according to best practices
-  - Secure the deployments according to best practices (rate limits, relevant security groups, etc)
-  - Consider multi-tenant and multi-environment deployment 
-  - Documentation for disaster recovery plan
-  - Any other improvement that you think is relevant for this project
+
+### Bonus Points (Optional)
+Bonus points are optional, but will be considered as a plus if implemented. Please prioritize completing the main requirements before investing time in the bonus section.
+You may choose to implement one or more of the following:
+- Supply the deployment with CI/CD automated process to push the image to ECR and deploy it to the cluster
+- Monitor the service and handle recovery for different resources
+- Maintain and handle the scaling of the service
+- Maintain and handle high availability of the service according to best practices
+- Secure the deployments according to best practices (rate limits, relevant security groups, etc)
+- Consider multi-tenant and multi-environment deployment 
+- Documentation for disaster recovery plan
+- Any other improvement that you think is relevant for this project
 
 ### How will the assignment be evaluated
 When evaluating the assignment, we will consider the following:
