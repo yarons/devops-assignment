@@ -32,7 +32,7 @@ Your deployment must meet the following criteria:
 - Use [Amazon Elastic Container Registry](https://us-east-1.console.aws.amazon.com/ecr/get-started) to push the images to a private repository
 - Create a [Kubernetes](https://us-east-1.console.aws.amazon.com/eks/home) cluster
 - Use helm to deploy the service(s)
-- Create a MongoDB instance and make it reachable for the deployed service, update the `MONGODB_URL` environment variable to match the mongodb connection url 
+- Create a MongoDB instance in the Kubernetes cluster (do not use any Mongo service such as DocumentDB) and make it reachable for the deployed service, update the `MONGODB_URL` environment variable to match the mongodb connection url 
 - Expose the services to the internet using AWS Load Balancer, AWS Elastic IP, and Network Interface
 - Document the deployment steps and the resources created in the deployment as clear and detailed as possible
 
