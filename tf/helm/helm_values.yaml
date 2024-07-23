@@ -1,0 +1,8 @@
+"service1":
+  "image":
+    "repository": "851725552187.dkr.ecr.eu-north-1.amazonaws.com/service1"
+    "tag": "latest"
+"service2":
+  "image":
+    "repository": "851725552187.dkr.ecr.eu-north-1.amazonaws.com/service2"
+    "tag": "latest"

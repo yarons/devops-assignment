@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service2
+spec:
+  replicas: {{ .Values.service2.replicaCount }}
+  selector:
+    matchLabels:
+      app: service2
+  template:
+    metadata:
+      labels:
+        app: service2
+    spec:
+      containers:
+      - name: service2
+        image: {{ .Values.service2.image.repository }}:{{ .Values.service2.image.tag }}
+        ports:
+        - containerPort: 80
+        env:
+        - name: MONGODB_URL
+          value: "mongodb://mongodb:27017/mydb"
